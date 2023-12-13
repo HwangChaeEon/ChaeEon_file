@@ -1,0 +1,193 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'S-Core Dream 5';
+    src: url('폰트/에스코어드림/S-CoreDream-5Medium.eot');
+    src: url('폰트/에스코어드림/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+        url('폰트/에스코어드림/S-CoreDream-5Medium.woff2') format('woff2'),
+        url('폰트/에스코어드림/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #333;
+    font-family: 'S-Core Dream 5';
+    font-weight: 500;
+}
+
+.header {
+    width: 1280px;
+    height: 100px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #13392e;
+}
+.header nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+.header .util ul {
+    display: flex;
+}
+.header .util ul li {
+    margin-left: 20px;
+}
+/* 첫번째에 마진 0을 주면 메뉴가 가운데로 배치 */
+.header .util ul li:first-child {
+    margin-left: 0;
+}
+
+
+/* 🧡메인비주얼🧡 */
+.main_visual {
+    /* height: 960px; */
+    height: 100vh;
+    /* vh : 브라우저 높이에 대응되는 값 
+    100vh ==100%
+    50vh ==50%*/
+    position: relative;
+}
+.main_visual figure {
+    height: 100%;
+    /* 부모에게 높이값이 없다면 이미지에 높이값은 받아 올 수가 없다. */
+}
+.main_visual figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual div {
+    width: 1280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+.main_visual div h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.main_visual div a {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: crimson;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 50px; 
+    border-radius: 30px;
+}
+
+/* 💛.section01💛*/
+.section01 {
+    background: url('../img/크리스마스배경3.jpg') center center / cover;
+    padding: 150px 0;
+}
+.section01 .inner {
+    width: 1280px;
+    /* background-color: pink; */
+    margin: 0 auto;
+    text-align: center;
+}
+.section01 .inner h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    background-color: crimson;
+    color: white;
+}
+.section01 .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+.section01 .inner .list .item {
+    width: 410px;
+    background-color: white;
+}
+.section01 .inner .list .item figure {
+    height: 400px;
+}
+.section01 .inner .list .item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section01 .inner .list .item div {
+    padding: 30px;
+    
+}
+
+/* 💚.section02💚*/
+.section02 {
+    margin: 150px 0;
+    text-align: center;
+}
+.section02 h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.section02 .list .item {
+    width: 250px;
+    height: 250px;
+    background-color: darksalmon;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 250px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* 💙.footer💙 */
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+.footer .footer_menu {
+    height: 70px;
+    border-bottom: 1px solid #fff;
+    line-height: 70px;
+
+}
+.footer .footer_menu ul {
+    width: 1280px;
+    margin: 0 auto;
+}
+.footer .footer_menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer .footer_info {
+    width: 1280px;
+    margin: 50px auto;
+}
+.footer .footer_info ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer .footer_info address p {
+    display: inline-block;
+    margin-right: 20px;
+    font-style: normal;
+}
+.footer > p {
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
